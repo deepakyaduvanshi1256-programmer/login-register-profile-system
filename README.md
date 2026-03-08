@@ -12,7 +12,7 @@ git add .
 git commit -m "Initial commit - Login/Register/Profile/Logout system"
 
 # Add remote GitHub repo (replace with your repo URL)
-git remote add origin https://github.com/yourusername/login-register-profile-system.git
+git remote add origin https://github.com//login-register-profile-system.git
 
 # Push code to GitHub main branch
 git branch -M main
@@ -64,7 +64,7 @@ A simple Node.js project demonstrating **login, registration, profile view, and 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/login-register-profile-system.git
+git clone https://github.com/deepakyaduvanshi1256-programmer/login-register-profile-system.git
 cd login-register-profile-system
 
 Install dependencies:
