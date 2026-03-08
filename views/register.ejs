@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+}
+
+/* Heading */
+
+h1{
+color:#ff4d4d;
+margin-bottom:20px;
+text-align:center;
+}
+
+/* Form container */
+
+form{
+width:380px;
+padding:35px;
+border-radius:15px;
+background:#1e1e2f;
+box-shadow:0 25px 60px rgba(0,0,0,0.7);
+text-align:center;
+}
+
+/* Inputs */
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:2px solid transparent;
+background:#1a1a2e;
+color:white;
+font-size:14px;
+outline:none;
+transition:all .35s ease;
+
+box-shadow:
+inset 0 0 6px rgba(255,0,0,0.2),
+0 0 6px rgba(0,0,0,0.4);
+}
+
+input::placeholder{
+color:#9c9c9c;
+}
+
+/* Hover */
+
+input:hover{
+transform:translateY(-2px);
+
+box-shadow:
+inset 0 0 10px rgba(255,0,0,0.4),
+0 0 15px rgba(255,0,0,0.5),
+0 0 30px rgba(255,0,0,0.3);
+}
+
+/* Focus */
+
+input:focus{
+transform:scale(1.03);
+
+box-shadow:
+inset 0 0 12px rgba(255,0,0,0.6),
+0 0 20px rgba(255,0,0,0.8),
+0 0 40px rgba(255,0,0,0.5);
+}
+
+/* Button */
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:none;
+border-radius:8px;
+background:#ff1a1a;
+color:white;
+font-weight:bold;
+cursor:pointer;
+font-size:15px;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#c1121f;
+box-shadow:0 10px 30px rgba(255,0,0,0.6);
+}
+
+/* Links container */
+
+.links{
+margin-top:15px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:8px;
+}
+
+/* Links */
+
+.links a{
+color:#ff4d4d;
+text-decoration:none;
+font-size:14px;
+}
+
+.links a:hover{
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Welcome to the Registration Page</h1>
+
+<form action="/register" method="POST">
+
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="text" name="gender" placeholder="Enter Gender" required>
+
+<input type="date" name="dob" required>
+
+<input type="text" name="fatherName" placeholder="Enter Father's Name" required>
+
+<input type="text" name="motherName" placeholder="Enter Mother's Name" required>
+
+<input type="text" name="phoneNumber" placeholder="Enter Phone Number" required>
+
+<input type="text" name="address" placeholder="Enter Address" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<input type="password" name="password" placeholder="Create your password" required>
+
+<input type="password" name="confirmPassword" placeholder="Confirm your password" required>
+
+<button type="submit">Register</button>
+
+<div class="links">
+
+</div>
+
+</form>
+
+</body>
+</html>
+
